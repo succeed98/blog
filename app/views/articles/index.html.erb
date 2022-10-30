@@ -1,7 +1,7 @@
 <div>
   <% @articles.each do |article| %>
     <div>
-      <%= article.title %>
+      <%= link_to article.title, article %>
     </div>
     <div><%= article.body %></div>
   <% end %>
